@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <editor></editor>
   </div>
 </template>
+<script lang="ts">
+import Vue from 'vue'
+import editor from '@/components/editor.vue'
+export default Vue.extend({
+  name:"about",
+  components: {
+    editor
+  }
+})
+</script>
